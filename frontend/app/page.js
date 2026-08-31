@@ -8,14 +8,18 @@ export default function Page() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const fetchTodos = async () => {
     try {
+      setError(null);
       const res = await fetch(`${API_URL}/todos`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setTodos(data);
     } catch (err) {
       console.error(err);
+      setError(String(err));
     }
   };
 
@@ -62,6 +66,9 @@ export default function Page() {
 
   return (
     <main style={{ padding: 24, fontFamily: 'Arial, sans-serif' }}>
+      <div style={{ background: '#f6f8fa', padding: 8, marginBottom: 12, borderRadius: 4 }}>
+        <strong>Debug:</strong> API_URL={API_URL} • todos={todos.length} {error ? `• error=${error}` : ''}
+      </div>
       <h1>Todo Tracker</h1>
 
       <form onSubmit={addTodo} style={{ marginBottom: 20 }}>
