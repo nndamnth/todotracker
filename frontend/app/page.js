@@ -73,17 +73,6 @@ export default function Page() {
 
   return (
     <main style={{ padding: 24, fontFamily: "Arial, sans-serif" }}>
-      <div
-        style={{
-          background: "#f6f8fa",
-          padding: 8,
-          marginBottom: 12,
-          borderRadius: 4,
-        }}
-      >
-        <strong>Debug:</strong> API_URL={API_URL} • todos={todos.length}{" "}
-        {error ? `• error=${error}` : ""}
-      </div>
       <h1>Todo Tracker</h1>
 
       <form onSubmit={addTodo} style={{ marginBottom: 20 }}>

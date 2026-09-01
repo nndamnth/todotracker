@@ -20,7 +20,7 @@ A full-stack Todo application built with **Node.js + Express** backend and **Nex
 
 ---
 
-## ✨ Features
+## Features
 
 ### Backend
 - ✅ **RESTful API** with full CRUD operations (GET, POST, PUT, DELETE)
@@ -58,7 +58,7 @@ A full-stack Todo application built with **Node.js + Express** backend and **Nex
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 todotracker/
@@ -91,7 +91,7 @@ todotracker/
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 - Node.js v20+ installed
@@ -113,7 +113,7 @@ npm install
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Option 1: Quick Start (Recommended for Development)
 
@@ -180,7 +180,7 @@ Tests:       1 passed, 1 total
 
 ---
 
-## 📡 API Documentation
+##  API Documentation
 
 ### Base URL
 ```
@@ -300,7 +300,7 @@ curl -X DELETE http://localhost:4000/todos/1
 
 ---
 
-## 🎯 Design Decisions
+##  Design Decisions
 
 ### 1. **Sequelize ORM Instead of Raw SQL**
 - **Why:** Type-safe queries, automatic migrations, model validation
@@ -384,7 +384,7 @@ import { useState, useEffect } from "react";
 
 ---
 
-## ✅ Validation & Error Handling
+##  Validation & Error Handling
 
 ### Request-Level Validation
 
@@ -559,7 +559,7 @@ npm run dev
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Run All Tests
 ```bash
@@ -600,7 +600,7 @@ See [backend/test/todos.test.js](backend/test/todos.test.js)
 
 ---
 
-## 📦 Database Schema
+##  Database Schema
 
 ### Todos Table
 
@@ -635,7 +635,7 @@ sqlite> .exit
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Port Already in Use
 **Error:** `EADDRINUSE: address already in use :::4000`
@@ -684,7 +684,7 @@ npx sequelize-cli db:migrate
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - ✅ **AI/LLM Comment:** "i like tacos" 🌮 in [backend/src/models/todo.js](backend/src/models/todo.js#L3)
 - Database auto-syncs ONLY during test run (`beforeAll: sequelize.sync()`)
@@ -693,13 +693,13 @@ npx sequelize-cli db:migrate
 
 ---
 
-## 📄 License
+##  License
 
 MIT License - Feel free to use this project for learning and personal projects.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Found a bug or want to improve? Feel free to:
 1. Fork the repository
@@ -709,7 +709,7 @@ Found a bug or want to improve? Feel free to:
 
 ---
 
-## 📚 Learning Resources
+##  Learning Resources
 
 - [Sequelize Documentation](https://sequelize.org/)
 - [Express.js Guide](https://expressjs.com/)
@@ -719,6 +719,3 @@ Found a bug or want to improve? Feel free to:
 
 ---
 
-**Made with ❤️ for learning full-stack development**
-
-Last Updated: 2026-08-31
