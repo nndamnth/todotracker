@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "todotracker-backend": "file:.."
+  }
+}
